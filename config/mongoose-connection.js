@@ -1,12 +1,14 @@
 const mongoose = require('mongoose');
+const debug = require('debug')('development:mongoose');
+const config = require('config');
 
 mongoose.
-connect("mongodb://127.0.0.1:27017/carryora")
+    connect(`${config.get("MONGODB_URI")}/carryora`)
 .then(()=>{
-    console.log("Database connected successfully");
+    debug("Database connected successfully");
 })
 .catch((err)=>{
-    console.log(err.message);
+    debug(err);
 }); 
 
 module.exports = mongoose.connection;

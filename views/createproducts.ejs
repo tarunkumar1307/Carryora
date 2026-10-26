@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carryora</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="overflow-hidden">
+    <!-- navbar -->
+    <div
+        class="fixed top-0 left-0 w-full h-20 z-50 flex justify-between items-center px-8 border-b border-zinc-200 bg-white">
+        <h1 class="text-3xl font-bold text-mauve-700 tracking-widest">Carryora👜</h1>
+        <ul class="flex gap-10 text-lg">
+            <li class="hover:scale-120 transition duration-200"><a href="">Home</a></li>
+            <li class="hover:scale-120 transition duration-200"><a href="">Products</a></li>
+            <li class="hover:scale-120 transition duration-200"><a href="">Cart</a></li>
+            <li class="hover:scale-120 transition duration-200"><a href="">My Account</a></li>
+        </ul>
+    </div>
+
+    <div class="flex">
+        <!-- left section -->
+        <aside class="fixed left-0 top-20 w-1/6 h-[calc(100vh-5rem)] px-6 py-10 border-r border-zinc-200 bg-white">
+            <div>
+                <a class="block tracking-tighter mb-4" href="">All Products</a>
+                <a class="block tracking-tighter" href="">Create New Products</a>
+            </div>
+        </aside>
+
+        <!-- right section -->
+        <main class="ml-[16.66667%] mt-20 p-10">
+            <h1 class="text-3xl tracking-tight">Create New Product</h1>
+            <div class="border-t border-zinc-200 p-4 mt-2">
+
+
+                <form action="" method="post" enctype="multipart/form-data">
+                    <h2 class="text-2xl tracking-tighter">Product Details</h2>
+                    <label for="" class="font-semibold"> Product Image </label>
+                    <input class="bg-black text-white px-4 py-2 rounded-full my-3 ml-5" type="file">
+
+                    <div class="w-[30%] mb-8 flex flex-col gap-2">
+                        <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-full" type="text"
+                            placeholder="Product Name">
+                        <div class="flex justify-between gap-2">
+                            <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]"
+                                type="number" placeholder="Product Price">
+                            <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]" type="text"
+                                placeholder="Discount Price">
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl tracking-tighter">Panel Details</h2>
+                    <div class="w-[30%] my-2 flex flex-col gap-2">
+                        <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-full" type="text"
+                            placeholder="Background Color">
+                        <div class="flex justify-between gap-2">
+                            <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]" type="text"
+                                placeholder="Panel Color">
+                            <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]" type="text"
+                                placeholder="Text Color">
+                        </div>
+                    </div>
+
+                    <input class="bg-black px-4 py-2 mt-5 rounded-md text-white hover:scale-95 transition duration-200"
+                        type="submit" value="Create Product">
+
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

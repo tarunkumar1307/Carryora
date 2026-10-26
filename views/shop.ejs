@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carryora</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="overflow-hidden">
+    <!-- navbar -->
+    <div
+        class="fixed top-0 left-0 w-full h-20 z-50 flex justify-between items-center px-8 border-b border-zinc-200 bg-white">
+        <h1 class="text-3xl font-bold text-mauve-700 tracking-widest">Carryora👜</h1>
+        <ul class="flex gap-10 text-lg">
+            <li class="hover:scale-120 transition duration-200"><a href="">Home</a></li>
+            <li class="hover:scale-120 transition duration-200"><a href="">Products</a></li>
+            <li class="hover:scale-120 transition duration-200"><a href="">Cart</a></li>
+            <li class="hover:scale-120 transition duration-200"><a href="">My Account</a></li>
+        </ul>
+    </div>
+
+    <div class="flex">
+        <!-- left section -->
+        <div class="fixed left-0 top-20 w-1/6 h-[calc(100vh-5rem)] flex flex-col justify-between px-6 py-10 border-r border-zinc-200 bg-white">
+            <div>
+                <label class="">sort by: </label>
+                <select class="px-3 py-2 border-2 border-zinc-200 rounded-md mb-10" name="sortby">
+                    <option value="popular" selected>Popular</option>
+                    <option value="lowtohigh">Low to High</option>
+                    <option value="hightolow">High to Low</option>
+                </select>
+
+                <a class="block tracking-tighter" href="">New Collection</a>
+                <a class="block tracking-tighter" href="">All Products</a>
+                <a class="block tracking-tighter" href="">Discounted Products</a>
+            </div>
+
+            <div>
+                <p class="font-bold">Filter by:</p>
+                <a class="block tracking-tighter" href="">Availability</a>
+                <a class="block tracking-tighter" href="">Discount</a>
+            </div>
+        </div>
+
+        <!-- right section -->
+        <div class="ml-[20%] mt-20 py-10 px-8 h-[calc(100vh-5rem)] overflow-y-auto content-start flex flex-wrap gap-10">
+            <div class="w-48 h-70 rounded-md bg-mauve-200 flex flex-col overflow-hidden">
+                <!-- product image -->
+                <div class="h-5/7 p-2 bg-neutral-500">
+                    <img src="" alt="Bag">
+                </div>
+
+                <!-- product detail -->
+                <div class="p-2 flex flex-1 justify-between items-center">
+                    <div>
+                        <h2 class="text-lg font-semibold tracking-tighter">Product Name</h2>
+                        <h4 class="tracking-tighter">₹1200</h4>
+                    </div>
+                    <div>
+                        <div class="w-8 h-8 text-2xl font-bold rounded-full bg-white flex justify-center items-center"><a href="">+</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
