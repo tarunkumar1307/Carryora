@@ -12,7 +12,10 @@
     <!-- navbar -->
     <div
         class="fixed top-0 left-0 w-full h-20 z-50 flex justify-between items-center px-8 border-b border-zinc-200 bg-white">
-        <h1 class="text-3xl font-bold text-mauve-700 tracking-widest">Carryora👜</h1>
+        <div>
+            <h1 class="text-3xl font-bold text-mauve-700 tracking-tighter"> Admin Panel </h1>
+            <h1 class="text-sm tracking-widest font-semibold text-mauve-700">Carryora👜</h1>
+        </div>
         <ul class="flex gap-10 text-lg">
             <li class="hover:scale-120 transition duration-200"><a href="">Home</a></li>
             <li class="hover:scale-120 transition duration-200"><a href="">Products</a></li>
@@ -31,36 +34,37 @@
         </aside>
 
         <!-- right section -->
-        <main class="ml-[16.66667%] mt-20 p-10">
+        <main class="ml-[18%] mt-20 p-10 w-5/6">
             <h1 class="text-3xl tracking-tight">Create New Product</h1>
             <div class="border-t border-zinc-200 p-4 mt-2">
-
-
-                <form action="" method="post" enctype="multipart/form-data">
+                <form action="/products/create" method="post" autocomplete="off" enctype="multipart/form-data">
                     <h2 class="text-2xl tracking-tighter">Product Details</h2>
+
                     <label for="" class="font-semibold"> Product Image </label>
-                    <input class="bg-black text-white px-4 py-2 rounded-full my-3 ml-5" type="file">
+                    <input
+                        class="bg-black text-white px-4 py-2 rounded-full my-3 ml-5 hover:scale-105 transition duration-200 cursor-pointer"
+                        type="file" value="Select File" name="productimage" required>
 
                     <div class="w-[30%] mb-8 flex flex-col gap-2">
                         <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-full" type="text"
-                            placeholder="Product Name">
+                            placeholder="Product Name" name="name">
                         <div class="flex justify-between gap-2">
                             <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]"
-                                type="number" placeholder="Product Price">
+                                type="number" placeholder="Product Price"  name="price">
                             <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]" type="text"
-                                placeholder="Discount Price">
+                                placeholder="Discount Price" name="discount">
                         </div>
                     </div>
 
                     <h2 class="text-2xl tracking-tighter">Panel Details</h2>
                     <div class="w-[30%] my-2 flex flex-col gap-2">
                         <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-full" type="text"
-                            placeholder="Background Color">
+                            placeholder="Background Color" name="bgcolor">
                         <div class="flex justify-between gap-2">
                             <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]" type="text"
-                                placeholder="Panel Color">
+                                placeholder="Panel Color" name="panelcolor">
                             <input class="px-4 py-2 bg-zinc-100 border-2 border-zinc-200 rounded-md w-[49%]" type="text"
-                                placeholder="Text Color">
+                                placeholder="Text Color" name="textcolor">
                         </div>
                     </div>
 
