@@ -6,15 +6,15 @@ textcolor: "#3D5268"
 
 Cling Bag
 Price: 1200
-Background: #F4DDD4
-Panel: #DDBEAF
-Text: #704E40
+Background: #F5E5D8
+Panel: #DDB99F
+Text: #70432F
 
 Supreme
 Price: 1800
-Background: #E4E8ED
-Panel: #BDBDBD
-Text: #414141
+Background: #E4EAF3
+Panel: #C5D2E3
+Text: #26364D
 
 The Daily
 Price: 100
@@ -27,3 +27,21 @@ Price: 1299
 Background: #DCE8FA
 Panel: #A9C4F0
 Text: #263B5B
+
+Pink Attack
+Price: 1399
+Background: #F7DFE3
+Panel: #E7C6CE
+Text: #7A4450
+
+BackPack
+Price: 1499
+Background: #EDEDED
+Panel: #C6C6C6
+Text: #444444
+
+Surprise
+Price: 149
+Background: 
+Panel:
+Text:
